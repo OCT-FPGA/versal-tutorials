@@ -2,6 +2,10 @@
 
 In this tutorial, we will guide you through the process of allocating a node with an AMD Alveo V70 in OCT and walk through the steps of running an example using a Vitis AI Docker container.
 
+## Prerequisites
+
+If you haven’t joined the OCTFPGA project yet, you can get started by following [this](https://github.com/OCT-FPGA/OCT-Tutorials/tree/master/cloudlab-setup) tutorial.
+
 ## Experiment setup
 
 ![plot](images/v70-start-exp.png)
