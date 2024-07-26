@@ -1,7 +1,5 @@
 # Getting started with Alveo V70s in OCT
 
-The AMD Alveo V70 is designed to accelerate convolutional neural networks, offering high performance and energy efficiency for low-latency and high-throughput edge applications. It supports deploying neural network models using Vitis AI tools, which allow for efficient quantization and compilation for FPGA-based acceleration. The V70 enhances machine learning workflows by enabling users to set up the hardware, install necessary software, and deploy models like ResNet18.
-
 In this tutorial, we will guide you through the process of allocating a node with an AMD Alveo V70 in OCT and walk through the steps of running an example using a Vitis AI Docker container.
 
 ## Experiment setup
