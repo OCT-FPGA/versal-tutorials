@@ -9,8 +9,6 @@ If you haven’t joined the OCTFPGA project yet, you can get started by followin
 ## Experiment setup
 After logging into the CloudLab account, select Experiments -> Start Experiment, and type `oct-v70` in the profile search box.
  
-![plot](images/v70-start-exp.png)
-
 Select the profile `oct-v70`.
 
 ![plot](images/v70-select-prof.png)
