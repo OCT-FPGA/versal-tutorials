@@ -7,7 +7,11 @@ In this tutorial, we will guide you through the process of allocating a node wit
 If you haven’t joined the OCTFPGA project yet, you can get started by following [this](https://github.com/OCT-FPGA/OCT-Tutorials/tree/master/cloudlab-setup) tutorial.
 
 ## Experiment setup
-After logging into the CloudLab account, select Experiments -> Start Experiment, and type `oct-v70` in the profile search box.
+After logging into the CloudLab account, select Experiments -> Start Experiment, and click `Change Profile`.
+
+![plot](images/v70-change-profile.png)
+
+Type `oct-v70` in the profile search box.
  
 Select the profile `oct-v70`.
 
