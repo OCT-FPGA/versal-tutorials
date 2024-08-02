@@ -63,6 +63,8 @@ After opening the VNC client, select File, then click New Connection. Enter the 
 
 ![plot](images/v70-vnc-client1.png)
 
+Click OK.
+
 ![plot](images/v70-vnc-client2.png)
 
 ![plot](images/v70-vnc-client3.png)
