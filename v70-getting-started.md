@@ -59,7 +59,7 @@ Launch the VNC server on the node you allocated for the experiment: `vncserver -
 
 You can use any VNC client to access the graphical desktop of the node you just allocated. In this example, we'll use RealVNC, which can be downloaded [here](https://www.realvnc.com/en/connect/download/viewer/). Configure the VNC client settings on your machine as shown, and connect to the VNC server.
 
-After opening the VNC client, select File, then click New Connection.
+After opening the VNC client, select File, then click New Connection. Enter the VNC server address as `<cloudlab IP>:<VNC port>`.
 
 ![plot](images/v70-vnc-client1.png)
 
