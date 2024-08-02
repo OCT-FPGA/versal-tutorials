@@ -45,7 +45,7 @@ After the node has finished booting up, a startup service will run that installs
 
 ![plot](images/v70-node-ready2.png)
 
-Once the node has finished running the startup script, you can log into the node using SSH.
+Once the node has finished running the startup script, you can log into the node using SSH: `ssh -i <private key> <user name>@<cloudlab IP>`
 
 ![plot](images/v70-node-login.png)
 
@@ -53,11 +53,13 @@ Once the node has finished running the startup script, you can log into the node
 
 ## Launch VNC
 
-Launch the VNC server on the node you allocated for the experiment.
+Launch the VNC server on the node you allocated for the experiment: `vncserver -localhost no -geometry 1920x1080`
 
 ![plot](images/v70-start-vnc.png)
 
 You can use any VNC client to access the graphical desktop of the node you just allocated. In this example, we'll use RealVNC, which can be downloaded [here](https://www.realvnc.com/en/connect/download/viewer/). Configure the VNC client settings on your machine as shown, and connect to the VNC server.
+
+After opening the VNC client, select File, then click New Connection.
 
 ![plot](images/v70-vnc-client1.png)
 
