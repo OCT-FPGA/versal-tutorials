@@ -60,7 +60,7 @@ Once the node has finished running the startup script, you can log into the node
 
 ## Launch VNC
 
-Launch the VNC server on the node you allocated for the experiment: `vncserver -localhost no -geometry 1920x1080`
+After you SSH into the node you've allocated for the experiment, launch the VNC server: `vncserver -localhost no -geometry 1920x1080`
 
 ![plot](images/v70-start-vnc.png)
 
