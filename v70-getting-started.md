@@ -72,7 +72,13 @@ Click OK.
 
 ## Start Docker 
 
-After logging into the graphical desktop of the V70 node, go to the Vitis-AI directory and start the Docker container.
+After logging into the graphical desktop of the V70 node, go to the Vitis-AI directory.
+
+```cd /docker/Vitis-AI```
+
+Then, start the Docker container with the following command. 
+
+```./docker_run.sh xilinx/vitis-ai-pytorch-cpu:latest```
 
 ![plot](images/v70-docker-start.png)
 
