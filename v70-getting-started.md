@@ -74,7 +74,7 @@ Click OK.
 
 After logging into the graphical desktop of the V70 node, click Activities (top left), and open a terminal. 
 
-![plot](images/v70-vnc-client4.png)
+![plot](images/v70-vnc-client-4.png)
 
 Then go to the Vitis-AI directory.
 
