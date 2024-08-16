@@ -49,7 +49,6 @@ Once the node has finished running the startup script, you can log into the node
 
 ![plot](images/v70-node-login.png)
 
-![plot](images/v70-node-logged-in.png)
 
 ## Launch VNC
 
