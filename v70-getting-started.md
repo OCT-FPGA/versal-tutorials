@@ -29,7 +29,9 @@ Select the project `OCTFPGA` and click Next.
 
 ![plot](images/v70-select-proj.png)
 
-Then click `Finish` to start the experiment.
+Then click `Finish` to start the experiment. 
+
+Note: If you see a warning that not enough resources are available to start the experiment, you can safely ignore it.
 
 ![plot](images/v70-schedule-exp.png)
 
