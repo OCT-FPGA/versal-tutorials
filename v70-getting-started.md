@@ -41,7 +41,7 @@ You will notice that a node is being allocated and starting up.
 
 ![plot](images/v70-node-boot.png)
 
-After the node has finished booting up, a startup service will run that installs necessary tools like Docker and a VNC server, which are required to run the example in this tutorial.
+After the node has finished booting up, a startup service will run that installs necessary tools like Docker and a VNC server, which are required to run the example in this tutorial. The green node icon will display a check mark once the startup service has completed. **IMPORTANT: Do not log into the node until the startup service has finished running, as the tools required for this tutorial may not yet be installed.**
 
 ![plot](images/v70-node-ready.png)
 
