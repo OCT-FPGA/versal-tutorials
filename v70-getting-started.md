@@ -78,7 +78,7 @@ Click OK.
 
 ## Start Docker 
 
-After logging into the graphical desktop of the V70 node, click Activities (top left), and open a terminal. 
+After logging into the graphical desktop of the V70 node, click on Activities in the top left corner, and then open a terminal by typing into the search box.
 
 ![plot](images/v70-vnc-terminal.png)
 
