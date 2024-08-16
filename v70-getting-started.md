@@ -82,7 +82,7 @@ After logging into the graphical desktop of the V70 node, click on Activities in
 
 ![plot](images/v70-vnc-terminal.png)
 
-Then go to the Vitis-AI directory.
+Inside the terminal window run the following command to go to the Vitis-AI directory.
 
 ```cd /docker/Vitis-AI```
 
