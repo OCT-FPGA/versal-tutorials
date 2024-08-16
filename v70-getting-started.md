@@ -45,7 +45,11 @@ After the node has finished booting up, a startup service will run that installs
 
 ![plot](images/v70-node-ready.png)
 
-The green node icon will display a check mark once the startup service has completed. **IMPORTANT: Do not log into the node until the startup service has finished running, as the tools required for this tutorial may not yet be installed.**
+The green node icon shows that startup services are still running.
+
+![plot](images/v70-node-startup.png)
+
+The startup status indicator will change to a check mark once the startup service has completed. **IMPORTANT: Do not log into the node until the startup service has finished running, as the tools required for this tutorial may not yet be installed.**
 
 ![plot](images/v70-node-ready2.png)
 
