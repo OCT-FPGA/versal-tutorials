@@ -53,7 +53,9 @@ The startup status indicator will change to a check mark once the startup servic
 
 ![plot](images/v70-node-ready2.png)
 
-Once the node has finished running the startup script, you can log into the node using SSH: `ssh -i <private key> <user name>@<cloudlab IP>`
+Once the node has finished running the startup script, you can click on the node and open the shell or if you prefer, you can use external tools such as PuTTY to ssh into the node.
+
+![plot](images/v70-node-login0.png)
 
 ![plot](images/v70-node-login.png)
 
