@@ -49,8 +49,6 @@ The startup status indicator will change to a check mark once the startup servic
 
 Once the node has finished running the startup script, you can click on the node and open the shell or if you prefer, you can use external tools such as PuTTY to ssh into the node.
 
-![plot](images/vck5000-ready.png)
-
 
 
 
