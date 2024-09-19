@@ -49,8 +49,6 @@ The startup status indicator will change to a check mark once the startup servic
 
 Once the node has finished running the startup script, you can click on the node and open the shell or if you prefer, you can use external tools such as PuTTY to ssh into the node.
 
+## Examples
 
-
-
-
-
+AIE tutorials are available here: https://xilinx.github.io/xup_aie_training/. The [Vector Add Lab](https://xilinx.github.io/xup_aie_training/vadd_lab_cli.html) provides instructions for using the Vitis flow to implement a compute kernel on the VCK5000's AI engine that performs vector addition.
