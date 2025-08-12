@@ -21,9 +21,9 @@ Click Next.
 
 ![plot](images/v70-select-prof2.png)
 
-In this tutorial, you will use the Ubuntu 20.04 image with the PyTorch Docker image. Leave the default selection as is, and click Next.
+In this tutorial, you will use the Ubuntu 22.04 image with the PyTorch Docker image. Leave the default selection as is, and click Next.
 
-![plot](images/v70-customize-prof.png)
+![plot](images/v70-customize-prof1.png)
 
 Select the project `OCTFPGA` and click Next.
 
