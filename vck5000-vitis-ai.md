@@ -62,3 +62,36 @@ Once the node has finished running the startup script, you can click on the node
 The original quick start tutorial can be found [here](https://xilinx.github.io/Vitis-AI/3.0/html/docs/quickstart/vck5000.html). 
 
 `cd /docker/Vitis-AI`
+
+`docker pull xilinx/vitis-ai-pytorch-cpu:latest`
+
+`./docker_run.sh xilinx/vitis-ai-pytorch-cpu:latest`
+
+`source /workspace/board_setup/vck5000/setup.sh DPUCVDX8H_8pe_normal`
+
+`vitis-ai-user@pc178:/workspace$ source /workspace/board_setup/vck5000/setup.sh DPUCVDX8H_8pe_normal
+------------------
+VAI_HOME = /vitis_ai_home
+------------------
+Autocomplete not enabled for XRT tools
+XILINX_XRT        : /opt/xilinx/xrt
+PATH              : /opt/xilinx/xrt/bin:/opt/vitis_ai/conda/envs/vitis-ai-wego-torch/bin:/opt/vitis_ai/conda/bin:/opt/vitis_ai/conda/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LD_LIBRARY_PATH   : /opt/xilinx/xrt/lib:/opt/xilinx/xrt/lib:/usr/lib:/usr/lib/x86_64-linux-gnu
+PYTHONPATH        : /opt/xilinx/xrt/python
+---------------------
+XILINX_XRT = /opt/xilinx/xrt
+---------------------
+XILINX_XRM      : /opt/xilinx/xrm
+PATH            : /opt/xilinx/xrm/bin:/opt/xilinx/xrt/bin:/opt/vitis_ai/conda/envs/vitis-ai-wego-torch/bin:/opt/vitis_ai/conda/bin:/opt/vitis_ai/conda/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LD_LIBRARY_PATH : /opt/xilinx/xrm/lib:/opt/xilinx/xrt/lib:/opt/xilinx/xrt/lib:/usr/lib:/usr/lib/x86_64-linux-gnu
+---------------------
+XILINX_XRM = /opt/xilinx/xrm
+---------------------
+---------------------
+LD_LIBRARY_PATH = /opt/xilinx/xrm/lib:/opt/xilinx/xrt/lib:/opt/xilinx/xrt/lib:/usr/lib:/usr/lib/x86_64-linux-gnu
+---------------------
+[0000:0d:00.1]  :  xilinx_vck5000_gen4x8_qdma_base_2  05DCA096-76CB-730B-8D19-EC1192FBAE3F  user(inst=129)  Yes            
+vck5000_ card detected
+---------------------
+XCLBIN_PATH = /opt/xilinx/overlaybins/DPUCVDX8H/8PE
+XLNX_VART_FIRMWARE = /opt/xilinx/overlaybins/DPUCVDX8H/8PE/dpu_DPUCVDX8H_8PE_350M_xilinx_vck5000_gen4x8_qdma_base_2.xclbin`
