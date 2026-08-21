@@ -37,19 +37,23 @@ Set the experiment duration and click `Finish` to start the experiment.
 
 You will notice that a node is being allocated and starting up.
 
-![plot](images/vck5000-provision.png)
+![plot](images/vitis-ai-provisioning.png)
 
-![plot](images/vck5000-boot.png)
+![plot](images/vitis-ai-booting.png)
 
 After the node has finished booting up, a startup service will run that installs runtime tools which are required to run the example in this tutorial. The gree node icon shows that statup services are still running.
 
-![plot](images/vck5000-booted.png)
+![plot](images/vitis-ai-booted.png)
 
 The startup status indicator will change to a check mark once the startup service has completed. **IMPORTANT: Do not log into the node until the startup service has finished running, as the tools required for this tutorial may not yet be installed.**
 
-![plot](images/vck5000-ready.png)
+![plot](images/vitis-ai-ready.png)
 
 Once the node has finished running the startup script, you can click on the node and open the shell or if you prefer, you can use external tools such as PuTTY to ssh into the node.
+
+![plot](images/vitis-ai-ssh.png)
+
+![plot](images/vitis-ai-shell.png)
 
 ## Examples
 
