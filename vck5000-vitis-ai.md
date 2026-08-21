@@ -29,11 +29,13 @@ You will use the Vitis-AI flow in this tutorial. Make sure that you select the V
 
 Select the project `OCTFPGA` and click Next.
 
-![plot](images/vck5000-project.png)
+![plot](images/vitis-ai-finalize.png)
+
+![plot](images/vitis-ai-finalize-2.png)
 
 Set the experiment duration and click `Finish` to start the experiment. 
 
-![plot](images/vitis-ai-finalize.png)
+![plot](images/vitis-ai-finish.png)
 
 You will notice that a node is being allocated and starting up.
 
