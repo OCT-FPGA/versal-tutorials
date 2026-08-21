@@ -189,6 +189,8 @@ vitis-ai-user@pc178:/workspace$ tar -xzvf vitis_ai_runtime_r3.0.0_image_video.ta
 ./video_analysis/video/structure.mp4
 ```
 
+Then, we compile the Resnet-50 source code to generate an executable binary.
+
 `vitis-ai-user@pc178:/workspace$ cd examples/vai_runtime/resnet50`
 
 ```bash
@@ -202,6 +204,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 opencv4                    OpenCV - Open Source Computer Vision Library
 ```
+
+We execute the compiled ResNet50 binary by passing it the path to the deployed .xmodel file.
 
 ```bash
 vitis-ai-user@pc178:/workspace/examples/vai_runtime/resnet50$ ./resnet50 /usr/share/vitis_ai_library/models/resnet50/resnet50.xmodel
@@ -218,3 +222,5 @@ Unable to init server: Could not connect: Connection refused
 
 (Classification of ResNet50:196): Gtk-WARNING **: 07:32:39.423: cannot open display: 
 vitis-ai-user@pc178:/workspace/examples/vai_runtime/resnet50$ tar -xzvf resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz
+
+This runs inference on the sample image 001.jpg directly on the VCK5000 accelerator card. The model successfully processes the image and identifies it as "brain coral" with a 98.2% probability confidence score.
