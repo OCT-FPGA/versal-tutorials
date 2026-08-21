@@ -60,3 +60,5 @@ Once the node has finished running the startup script, you can click on the node
 ## Examples
 
 The original quick start tutorial can be found [here](https://xilinx.github.io/Vitis-AI/3.0/html/docs/quickstart/vck5000.html). 
+
+`cd /docker/Vitis-AI`
