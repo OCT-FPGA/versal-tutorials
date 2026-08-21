@@ -1,6 +1,6 @@
-# Getting started with VCK5000 Versal devices in OCT
+# Getting Started with Vitis AI on VCK5000s in OCT
 
-This tutorial outlines the process of allocating a node with the AMD VCK5000 Versal device in OCT. It also details the steps to execute a sample application using the Vitis acceleration flow.
+This tutorial provides step-by-step instructions for allocating a VCK5000 node and running a simple Vitis AI application on the Open Cloud Testbed (OCT).    
 
 ## Prerequisites
 
@@ -9,13 +9,13 @@ If you haven’t joined the OCTFPGA project yet, you can get started by followin
 ## Experiment setup
 After logging into the CloudLab account, select Experiments -> Start Experiment, and click `Change Profile`.
 
-![plot](images/vck5000-change-profile.png)
+![plot](images/vitis-ai-change-profile.png)
 
 Type `oct-vck5000` in the profile search box.
  
 Select the profile `oct-vck5000`.
 
-![plot](images/vck5000-profile.png)
+![plot](images/vitis-ai-vck5000.png)
 
 Click Next.
 
