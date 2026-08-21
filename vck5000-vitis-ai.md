@@ -57,15 +57,21 @@ Once the node has finished running the startup script, you can click on the node
 
 ![plot](images/vitis-ai-shell.png)
 
-## Examples
+## Vitis-AI Example
 
-The original quick start tutorial can be found [here](https://xilinx.github.io/Vitis-AI/3.0/html/docs/quickstart/vck5000.html). 
+The original quick start tutorial can be found [here](https://xilinx.github.io/Vitis-AI/3.0/html/docs/quickstart/vck5000.html). To run this tutorial, you need to have the Vitis-AI docker image installed. The Vitis-AI repository has already been downloaded to /docker/Vitis-AI, as part of the startup script. First navigate to the Vitis-AI directory.
 
 `cd /docker/Vitis-AI`
 
+The following command is used to download the official pre-configured container image containing the Vitis AI toolchain and PyTorch runtime to the local machine. 
+
 `docker pull xilinx/vitis-ai-pytorch-cpu:latest`
 
+Then run the following command. It executes a setup script that launches an interactive container from that image
+
 `./docker_run.sh xilinx/vitis-ai-pytorch-cpu:latest`
+
+![plot](images/vitis-ai-docker.png)
 
 `source /workspace/board_setup/vck5000/setup.sh DPUCVDX8H_8pe_normal`
 
