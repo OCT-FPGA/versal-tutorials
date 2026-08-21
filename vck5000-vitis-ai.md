@@ -59,4 +59,4 @@ Once the node has finished running the startup script, you can click on the node
 
 ## Examples
 
-AIE tutorials are available here: https://xilinx.github.io/xup_aie_training/. The [Vector Add Lab](https://xilinx.github.io/xup_aie_training/vadd_lab_cli.html) provides instructions for using the Vitis flow to implement a compute kernel on the VCK5000's AI engine that performs vector addition.
+The original quick start tutorial can be found [here](https://xilinx.github.io/Vitis-AI/3.0/html/docs/quickstart/vck5000.html). 
