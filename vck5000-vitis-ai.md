@@ -23,9 +23,9 @@ Click Next.
 
 Specify the node(s) with VCK5000s under "List of nodes". For this experiment, one node will be used. Node availability can be checked at the cluster status page: https://cloudlab.us/cluster-status.php. Scroll to the bottom of the cluster status page to see the "Mass Nodes" table. The nodes pc176 through pc179 are designated for VCK5000s. Any available node from this set can be selected and its ID should be entered (for example, pc179).
 
-You will use the Vitis flow in this tutorial. Leave the default selection as is, and click Next.
+You will use the Vitis-AI flow in this tutorial. Make sure that you select the Vitis-AI workflow. 
 
-![plot](images/vck5000-parameterize.png)
+![plot](images/vitis-ai-parameterize.png)
 
 Select the project `OCTFPGA` and click Next.
 
