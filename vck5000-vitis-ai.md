@@ -73,6 +73,8 @@ Then run the following command. It executes a setup script that launches an inte
 
 ![plot](images/vitis-ai-docker.png)
 
+The following command executes the environment configuration script for VCK5000 accelerator card inside the container, setting up system paths for XRT and XRM, and targeting the 8-processor DPU overlay binary (DPUCVDX8H_8pe_normal) needed to run hardware-accelerated deep learning models.
+
 `source /workspace/board_setup/vck5000/setup.sh DPUCVDX8H_8pe_normal`
 
 ```bash
@@ -104,6 +106,8 @@ XCLBIN_PATH = /opt/xilinx/overlaybins/DPUCVDX8H/8PE
 XLNX_VART_FIRMWARE = /opt/xilinx/overlaybins/DPUCVDX8H/8PE/dpu_DPUCVDX8H_8PE_350M_xilinx_vck5000_gen4x8_qdma_base_2.xclbin
 ```
 
+Then we download the compiled ResNet50 model archive from AMD servers, which contains the pre-compiled model files optimized specifically for execution on the VCK5000 card's DPU architecture.
+
 ```bash
 vitis-ai-user@pc178:/workspace$ wget https://www.xilinx.com/bin/public/openDownload?filename=resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz -O resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz
 --2026-08-21 07:30:06--  https://www.xilinx.com/bin/public/openDownload?filename=resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz
@@ -123,6 +127,8 @@ resnet50-vck5000-DPUCVD 100%[===============================>]  17.49M  63.0MB/s
 2026-08-21 07:30:06 (63.0 MB/s) - ‘resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz’ saved [18343265/18343265]
 ```
 
+Then we extract the downloaded archive. 
+
 ```bash
 vitis-ai-user@pc178:/workspace$ tar -xzvf resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz
 resnet50/
@@ -132,9 +138,13 @@ resnet50/md5sum.txt
 resnet50/resnet50.prototxt
 ```
 
+Then we create the system model directory inside the container to store Vitis AI models if it does not already exist, and copy the extracted ResNet50 model directory into that central models path so the Vitis AI Library runtime can automatically locate it.
+
 `sudo mkdir -p /usr/share/vitis_ai_library/models`
 
 `sudo cp resnet50 /usr/share/vitis_ai_library/models -r`
+
+Next, we download the official Vitis AI sample test data archive containing sample images and video files used for running model inference.
 
 ```bash
 vitis-ai-user@pc178:/workspace$ wget -O vitis_ai_runtime_r3.0.0_image_video.tar.gz "https://www.xilinx.com/bin/public/openDownload?filename=vitis_ai_runtime_r3.0.0_image_video.tar.gz"
@@ -154,6 +164,8 @@ vitis_ai_runtime_r3.0.0 100%[===============================>]  44.88M  80.3MB/s
 
 2026-08-21 07:31:27 (80.3 MB/s) - ‘vitis_ai_runtime_r3.0.0_image_video.tar.gz’ saved [47058467/47058467]
 ```
+
+Then we extract the sample images and videos into the `examples/vai_runtime` directory inside the container for the runtime applications to process.
 
 ```bash
 vitis-ai-user@pc178:/workspace$ tar -xzvf vitis_ai_runtime_r3.0.0_image_video.tar.gz -C examples/vai_runtime
