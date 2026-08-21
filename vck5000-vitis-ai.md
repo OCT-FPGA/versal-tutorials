@@ -33,7 +33,7 @@ Select the project `OCTFPGA` and click Next.
 
 Set the experiment duration and click `Finish` to start the experiment. 
 
-![plot](images/vck5000-duration.png)
+![plot](images/vitis-ai-finalize.png)
 
 You will notice that a node is being allocated and starting up.
 
