@@ -99,6 +99,93 @@ XLNX_VART_FIRMWARE = /opt/xilinx/overlaybins/DPUCVDX8H/8PE/dpu_DPUCVDX8H_8PE_350
 ```
 
 ```bash
+vitis-ai-user@pc178:/workspace$ wget https://www.xilinx.com/bin/public/openDownload?filename=resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz -O resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz
+--2026-08-21 07:30:06--  https://www.xilinx.com/bin/public/openDownload?filename=resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz
+Resolving www.xilinx.com (www.xilinx.com)... 23.49.250.188, 23.49.250.194
+Connecting to www.xilinx.com (www.xilinx.com)|23.49.250.188|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://download.amd.com/opendownload/xlnx/resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz [following]
+--2026-08-21 07:30:06--  https://download.amd.com/opendownload/xlnx/resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz
+Resolving download.amd.com (download.amd.com)... 23.33.202.129
+Connecting to download.amd.com (download.amd.com)|23.33.202.129|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 18343265 (17M) [application/x-gzip]
+Saving to: ‘resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz’
+
+resnet50-vck5000-DPUCVD 100%[===============================>]  17.49M  63.0MB/s    in 0.3s    
+
+2026-08-21 07:30:06 (63.0 MB/s) - ‘resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz’ saved [18343265/18343265]
+```
+
+```bash
+vitis-ai-user@pc178:/workspace$ tar -xzvf resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz
+resnet50/
+resnet50/meta.json
+resnet50/resnet50.xmodel
+resnet50/md5sum.txt
+resnet50/resnet50.prototxt
+```
+
+`sudo mkdir -p /usr/share/vitis_ai_library/models`
+
+`sudo cp resnet50 /usr/share/vitis_ai_library/models -r`
+
+```bash
+vitis-ai-user@pc178:/workspace$ wget -O vitis_ai_runtime_r3.0.0_image_video.tar.gz "https://www.xilinx.com/bin/public/openDownload?filename=vitis_ai_runtime_r3.0.0_image_video.tar.gz"
+--2026-08-21 07:31:26--  https://www.xilinx.com/bin/public/openDownload?filename=vitis_ai_runtime_r3.0.0_image_video.tar.gz
+Resolving www.xilinx.com (www.xilinx.com)... 23.49.250.188, 23.49.250.153, 23.49.250.160, ...
+Connecting to www.xilinx.com (www.xilinx.com)|23.49.250.188|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://download.amd.com/opendownload/xlnx/vitis_ai_runtime_r3.0.0_image_video.tar.gz [following]
+--2026-08-21 07:31:26--  https://download.amd.com/opendownload/xlnx/vitis_ai_runtime_r3.0.0_image_video.tar.gz
+Resolving download.amd.com (download.amd.com)... 23.33.202.129
+Connecting to download.amd.com (download.amd.com)|23.33.202.129|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 47058467 (45M) [application/x-gzip]
+Saving to: ‘vitis_ai_runtime_r3.0.0_image_video.tar.gz’
+
+vitis_ai_runtime_r3.0.0 100%[===============================>]  44.88M  80.3MB/s    in 0.6s    
+
+2026-08-21 07:31:27 (80.3 MB/s) - ‘vitis_ai_runtime_r3.0.0_image_video.tar.gz’ saved [47058467/47058467]
+```
+
+```bash
+vitis-ai-user@pc178:/workspace$ tar -xzvf vitis_ai_runtime_r3.0.0_image_video.tar.gz -C examples/vai_runtime
+./adas_detection/
+./adas_detection/video/
+./adas_detection/video/adas.avi
+./adas_detection/video/adas.webm
+./images/
+./images/001.jpg
+./pose_detection/
+./pose_detection/video/
+./pose_detection/video/pose.webm
+./pose_detection/video/pose.mp4
+./segmentation/
+./segmentation/video/
+./segmentation/video/traffic.mp4
+./segmentation/video/traffic.webm
+./video_analysis/
+./video_analysis/video/
+./video_analysis/video/structure.webm
+./video_analysis/video/structure.mp4
+```
+
+`vitis-ai-user@pc178:/workspace$ cd examples/vai_runtime/resnet50`
+
+```bash
+vitis-ai-user@pc178:/workspace/examples/vai_runtime/resnet50$ bash build.sh 
+No LSB modules are available.
+No LSB modules are available.
+g++ (Ubuntu 10.3.0-1ubuntu1~20.04) 10.3.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+opencv4                    OpenCV - Open Source Computer Vision Library
+```
+
+```bash
 vitis-ai-user@pc178:/workspace/examples/vai_runtime/resnet50$ ./resnet50 /usr/share/vitis_ai_library/models/resnet50/resnet50.xmodel
 WARNING: Logging before InitGoogleLogging() is written to STDERR
 I0821 07:32:30.251623   196 main.cc:292] create running for subgraph: subgraph_conv1
