@@ -96,6 +96,7 @@ vck5000_ card detected
 ---------------------
 XCLBIN_PATH = /opt/xilinx/overlaybins/DPUCVDX8H/8PE
 XLNX_VART_FIRMWARE = /opt/xilinx/overlaybins/DPUCVDX8H/8PE/dpu_DPUCVDX8H_8PE_350M_xilinx_vck5000_gen4x8_qdma_base_2.xclbin
+```
 
 ```bash
 vitis-ai-user@pc178:/workspace/examples/vai_runtime/resnet50$ ./resnet50 /usr/share/vitis_ai_library/models/resnet50/resnet50.xmodel
