@@ -15,11 +15,11 @@ Type `oct-vck5000` in the profile search box.
  
 Select the profile `oct-vck5000`.
 
-![plot](images/vitis-ai-profile-selected.png)
+![plot](images/vitis-ai-vck5000.png)
 
 Click Next.
 
-![plot](images/vitis-ai-vck5000.png)
+![plot](images/vitis-ai-profile-selected.png)
 
 Specify the node(s) with VCK5000s under "List of nodes". For this experiment, one node will be used. Node availability can be checked at the cluster status page: https://cloudlab.us/cluster-status.php. Scroll to the bottom of the cluster status page to see the "Mass Nodes" table. The nodes pc176 through pc179 are designated for VCK5000s. Any available node from this set can be selected and its ID should be entered (for example, pc179).
 
