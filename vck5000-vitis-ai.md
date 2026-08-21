@@ -69,7 +69,8 @@ The original quick start tutorial can be found [here](https://xilinx.github.io/V
 
 `source /workspace/board_setup/vck5000/setup.sh DPUCVDX8H_8pe_normal`
 
-`vitis-ai-user@pc178:/workspace$ source /workspace/board_setup/vck5000/setup.sh DPUCVDX8H_8pe_normal
+```bash
+vitis-ai-user@pc178:/workspace$ source /workspace/board_setup/vck5000/setup.sh DPUCVDX8H_8pe_normal
 ------------------
 VAI_HOME = /vitis_ai_home
 ------------------
@@ -94,4 +95,4 @@ LD_LIBRARY_PATH = /opt/xilinx/xrm/lib:/opt/xilinx/xrt/lib:/opt/xilinx/xrt/lib:/u
 vck5000_ card detected
 ---------------------
 XCLBIN_PATH = /opt/xilinx/overlaybins/DPUCVDX8H/8PE
-XLNX_VART_FIRMWARE = /opt/xilinx/overlaybins/DPUCVDX8H/8PE/dpu_DPUCVDX8H_8PE_350M_xilinx_vck5000_gen4x8_qdma_base_2.xclbin`
+XLNX_VART_FIRMWARE = /opt/xilinx/overlaybins/DPUCVDX8H/8PE/dpu_DPUCVDX8H_8PE_350M_xilinx_vck5000_gen4x8_qdma_base_2.xclbin
