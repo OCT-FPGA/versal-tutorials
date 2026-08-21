@@ -222,5 +222,6 @@ Unable to init server: Could not connect: Connection refused
 
 (Classification of ResNet50:196): Gtk-WARNING **: 07:32:39.423: cannot open display: 
 vitis-ai-user@pc178:/workspace/examples/vai_runtime/resnet50$ tar -xzvf resnet50-vck5000-DPUCVDX8H-8pe-r3.0.0.tar.gz
+```
 
 This runs inference on the sample image 001.jpg directly on the VCK5000 accelerator card. The model successfully processes the image and identifies it as "brain coral" with a 98.2% probability confidence score.
