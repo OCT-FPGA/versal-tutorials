@@ -4,7 +4,7 @@ This tutorial provides step-by-step instructions for allocating a VCK5000 node a
 
 ## Prerequisites
 
-If you haven’t joined the OCTFPGA project yet, you can get started by following [this](https://github.com/OCT-FPGA/OCT-Tutorials/tree/master/cloudlab-setup) tutorial.
+If you haven’t joined the OCTFPGA project yet, you can get started by following [this]([https://github.com/OCT-FPGA/OCT-Tutorials/tree/master/cloudlab-setup](https://github.com/OCT-FPGA/OCT-Tutorials/blob/master/cloudlab-setup/accounts.md)) tutorial.
 
 ## Experiment setup
 After logging into the CloudLab account, select Experiments -> Start Experiment, and click `Change Profile`.
